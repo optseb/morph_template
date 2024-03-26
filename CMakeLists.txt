@@ -3,8 +3,8 @@
 # a morphologica that is 'in-tree'
 #
 
-# cmake version 3.1 provides the set(CMAKE_CXX_STANDARD 17) feature
-cmake_minimum_required(VERSION 3.1)
+# cmake version 3.1 provides the set(CMAKE_CXX_STANDARD 17) feature. Versions less than 3.5 are up for deprecation.
+cmake_minimum_required(VERSION 3.5)
 
 # Give your project a name
 project(morph_template)
