@@ -69,6 +69,10 @@ set(MORPH_INCLUDE_PATH "${PROJECT_SOURCE_DIR}/morphologica" CACHE PATH "The path
 include_directories(BEFORE ${MORPH_INCLUDE_PATH}/include) # Allows GL3/gl3.h to be found
 include_directories(BEFORE ${MORPH_INCLUDE_PATH})         # Allows morph/Header.h to be found
 
+# If you want to add another directory to your include path, you can add an extra include_directories call:
+# include_directories(BEFORE ${PROJECT_SOURCE_DIR}/my_includes)
+# Note that ${PROJECT_SOURCE_DIR} will be replaced with the path to the base of your code repository.  
+
 #
 # All the library finding is now done. It's time to compile the program.
 #
